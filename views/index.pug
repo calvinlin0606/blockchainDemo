@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action="/searchBlock", method = "GET")
+    div 
+      label(for = 'blockId')  Block Id :
+      input(name = 'blockId', placeholder = 'Input block id' value='')
+    br
+    button(type = 'submit') Submit
+  
+
+
